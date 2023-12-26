@@ -67,9 +67,12 @@ libraries = {
 }
 
 [node name="AnimationTree" type="AnimationTree" parent="."]
+root_node = NodePath("../Sprite2D")
+libraries = {
+"": SubResource("AnimationLibrary_qresn")
+}
 tree_root = SubResource("AnimationNodeBlendTree_6ehto")
 anim_player = NodePath("../AnimationPlayer")
-active = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
